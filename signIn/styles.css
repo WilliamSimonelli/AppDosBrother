@@ -1,0 +1,107 @@
+body{
+    margin: 50;
+    background: #000000;
+    background: linear-gradient(to right, white, #27a742, #161616);
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.center{
+
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+background: #000000;
+background: linear-gradient(to right, white, #808080);
+width: 400px;
+border-radius: 20px;
+}
+
+.center h1{
+    text-align: center;
+    padding: 0 0 20px 0;
+    border-bottom: 1px solid black;
+}
+.center form{
+    position: center;
+    padding: 5% 30%;
+    box-sizing: border-box;
+}
+
+form .text_field{
+    position: relative;
+    margin: 30px 0;
+}
+
+.text_field input{
+    
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+}
+
+.text_field label{
+    position: absolute;
+    top: 30%;
+    left: 5px;
+    font-size: 16px;
+    color: #adadad;
+    transition: 0.5s;
+}
+
+.text_field span:: ::before{
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+}
+
+.text_field input:focus ~ label,
+.text_field input:valid ~ label{
+    top: -25px;
+    color: rgb(22, 131, 0);
+}
+
+.text_field input:focus ~ span::before,
+.text_field input:valid ~ span::before{
+    width: 100%;
+}
+
+.pass{
+    margin: -5px 0 20px 5px;
+    font-style: initial;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    cursor: pointer;
+
+}
+
+input[type="submit"]{
+    width: 100%;
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+    background: #27a742;
+}
+
+.loginLink{
+    margin: 30px 0;
+    text-align: center;
+    font-size: 16px;
+
+}
+
+.loginLink a{
+    color: #27a742;
+    text-decoration: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
